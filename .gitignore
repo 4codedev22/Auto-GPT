@@ -163,3 +163,13 @@ openai/
 
 # news
 CURRENT_BULLETIN.md
+auto_gpt_workspace_agro_chat/Auto-GPT.code-workspace
+auto_gpt_workspace_agro_chat/bdd_test_resource.txt
+auto_gpt_workspace_agro_chat/file_logger.txt
+auto_gpt_workspace_agro_chat/flutter_gherkin_info.txt
+auto_gpt_workspace_agro_chat/instructions-agro-chat.txt
+auto_gpt_workspace_agro_chat/instructions-ituran.txt
+auto_gpt_workspace_agro_chat/ituran-features.txt
+nodejs_workspace/instructions.txt
+nodejs_workspace/program.txt
+nodejs_workspace/README.md
