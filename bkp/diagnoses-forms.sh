@@ -180,6 +180,7 @@ echo "Forms created successfully!"
 
 # create a list of questions from the forms
 echo "Creating list of questions..."
+rm -f autogpt_$1/questions.txt
 touch autogpt_$1/questions.txt
 jq -r '.general_info | .[] | .question' autogpt_$1/forms.json >> autogpt_$1/questions.txt
 jq -r '.human_resources | .[] | .question' autogpt_$1/forms.json >> autogpt_$1/questions.txt

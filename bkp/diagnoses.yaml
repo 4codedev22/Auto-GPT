@@ -1,5 +1,7 @@
 ai_goals:
- - read data.json and answer questions forms.json save all to answers.json
+ - execute shell python read_and_append.py
+ - execute shell python summarize.py
+ - terminate
 ai_name: diagnosesGPT
 ai_role: an AI agent to create business diagnoses
 api_budget: 0.0

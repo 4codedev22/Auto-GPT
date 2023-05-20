@@ -25,7 +25,7 @@ class Config(metaclass=Singleton):
         self.continuous_limit = 0
         self.speak_mode = False
         self.skip_reprompt = False
-        self.allow_downloads = False
+        self.allow_downloads = True
         self.skip_news = False
 
         self.authorise_key = os.getenv("AUTHORISE_COMMAND_KEY", "y")

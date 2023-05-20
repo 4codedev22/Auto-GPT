@@ -78,7 +78,7 @@ def scrape_text(url: str) -> str:
     return text
 
 
-def scrape_links(url: str) -> str | list[str]:
+def scrape_clean_links(url: str) -> list[tuple[str, str]]:
     """Scrape links from a webpage
 
     Args:
@@ -97,8 +97,10 @@ def scrape_links(url: str) -> str | list[str]:
     for script in soup(["script", "style"]):
         script.extract()
 
-    hyperlinks = extract_hyperlinks(soup, url)
+    return extract_hyperlinks(soup, url)
 
+def scrape_links(url: str) -> str | list[str]:
+    hyperlinks = scrape_clean_links(url)
     return format_hyperlinks(hyperlinks)
 
 
