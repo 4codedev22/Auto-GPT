@@ -1,0 +1,5 @@
+ai_goals:
+ - read data.json and answer questions forms.json save all to answers.json
+ai_name: diagnosesGPT
+ai_role: an AI agent to create business diagnoses
+api_budget: 0.0

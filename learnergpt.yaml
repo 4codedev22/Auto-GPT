@@ -1,0 +1,11 @@
+ai_goals:
+  - writes a python script to:
+    - 'read ../autogpt_site_parser/siteparsed.json  the sintaxe is ```[{"sentences": ["...", ...]}]```'
+    - join all sentences and its items to create a big text use natural language processing to understand the text and write the result in a file called sentences_insights.txt
+    - read the file sentences_insights.txt and use natural language processing to understand it and create a complete description to a human read it
+    - save the result in a file called complete_description.txt
+  - execute the python script
+  - finish
+ai_name: LearnerGPT
+ai_role: an AI agent read sentences and create a complete description.
+api_budget: 0.0
