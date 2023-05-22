@@ -174,3 +174,4 @@ auto_gpt_workspace_agro_chat/ituran-features.txt
 nodejs_workspace/instructions.txt
 nodejs_workspace/program.txt
 nodejs_workspace/README.md
+autogpt_**/*/node_modules/
