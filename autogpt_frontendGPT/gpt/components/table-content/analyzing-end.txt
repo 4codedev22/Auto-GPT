@@ -1,0 +1,6 @@
+Implemented changes to the TableContentComponent:
+- Created a TableHeaderComponent to handle rendering the table headers
+- Created a TableBodyComponent to handle rendering the table body
+- Created a TableSelectionComponent to handle selection of table items
+- Created a TableExportComponent to handle exporting of table data
+- Refactored the TableContentComponent to use these new components and reduce its responsibilities

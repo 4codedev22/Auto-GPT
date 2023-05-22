@@ -1,0 +1,3 @@
+# Business Health Report for Águia Contabilidade GO
+
+Águia Contabilidade GO is a Brazilian accounting firm that offers services to micro and small businesses, including MEIs. They provide both in-person and digital accounting services, as well as consulting, virtual office solutions, and credit recovery services. They specialize in accounting for natural product stores and offer customized solutions for each client. The website includes testimonials from satisfied clients and news articles related to accounting and tax regulations. They offer different plans for MEIs, with varying levels of service depending on the client's needs. The company is located in Goiânia, Brazil, and can be contacted through various channels, including phone, email, and WhatsApp.

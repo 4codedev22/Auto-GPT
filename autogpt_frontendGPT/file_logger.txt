@@ -1,0 +1,20 @@
+File Operation Logger write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/table/analyzing-startup.txt #d41d8cd98f00b204e9800998ecf8427e
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/table-content.component.html #afb5f0f4089acb70243eeb2101f72fa0
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/analyzing-startup.txt #d36587e77197fcf9e5945da409ef9517
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/separating-startup.txt #228aafe7edf8d98015635ed677a13315
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/separating-middle.txt #85006073df700cebb1a3ad736edffe9d
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/analyzing-end.txt #bb9fcb29ad44782795ac72293ea13904
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/separating-end.txt #e408c6421e2290dfd4f9dcaf25125c5a
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/table-content.component.html #d7ae8023cc0d965a186c5274b7dd62df
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/table-header/table-header.component.html #a342c12750a78002c21fdb428847266d
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/table-body/table-body.component.html #10c2b356d887c55c3dd19940072536b0
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/table-selection/table-selection.component.html #14f98f2472416201a7a73c8a290858a6
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/components/table-content/table-export/table-export.component.html #05c96a6d797d0a309fba72c0ac26f99f
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/analyzing-startup.txt #be201fa84455ddb41159b30b4449b749
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/analyzing-middle.txt #6efb5612774fa70b2d95ae4c61c75128
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/table/separating-startup.txt #5063da61a07f41a01b36c5150dd21d04
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/table/separating-startup.txt #cf37a4596500c530c323652ac437602a
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/table/analyzing-startup.txt #c2eb34f1caac40ff2cdd111868ebf359
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/table/separating-startup.txt #ae49de1ed54ee6d84bc4eca209ccc1cc
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/table/separating-middle.txt #ae49de1ed54ee6d84bc4eca209ccc1cc
+write: /home/fabricio/Auto-GPT/autogpt_frontendGPT/gpt/gpt/table-card.component.ts #51b957246c58d1e35de754c7aedc5791

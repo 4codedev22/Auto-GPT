@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "Auto-GPT"
+		},
+		{
+			"path": "./autogpt_mobfleet",
+			"name": "mobfleet"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,10 @@
+{
+  "account_approval": {
+    "subject": "Su cuenta ha sido aprobada",
+    "greeting": "Bienvenido",
+    "p1": "Tu cuenta ha sido aprobada en nuestra aplicación y ahora puedes disfrutar de todas las ventajas de esta plataforma.",
+    "p2": "Únase ahora y vea lo fácil que es usarlo. No dude en ponerse en contacto con nosotros si tiene alguna pregunta.",
+    "p3": "Equipo",
+    "footer": "2023, todos los derechos reservados"
+  }
+}

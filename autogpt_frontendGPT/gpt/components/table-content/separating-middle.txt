@@ -1,0 +1,6 @@
+Proposed changes to the TableContentComponent:
+- Create a TableHeaderComponent to handle rendering the table headers
+- Create a TableBodyComponent to handle rendering the table body
+- Create a TableSelectionComponent to handle selection of table items
+- Create a TableExportComponent to handle exporting of table data
+- Refactor the TableContentComponent to use these new components and reduce its responsibilities

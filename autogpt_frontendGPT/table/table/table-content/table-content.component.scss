@@ -1,0 +1,33 @@
+.content-slice-table {
+    overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #4d4d50;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.icon {
+    color: #B3B3B3;
+    font-size: 1.5em;
+}
+
+tr.opacity-reduced {
+    opacity: 0.2;
+}

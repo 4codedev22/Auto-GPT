@@ -1,0 +1,53 @@
+<div class="d-flex flex-row-reverse">
+    <button type="button" class="btn">
+        <i class="icon fa fa-expand"></i>
+    </button>
+    <button type="button" class="btn">
+        <i class="icon fa fa-arrow-circle-o-down"></i>
+    </button>
+    <a [href]="helpUrl" target="_blank" class="btn">
+        <i class="icon fa fa-question-circle-o"></i>
+    </a>
+    <button type="button" click="export()" class="btn">
+        <i class="icon fa fa-file-excel-o"></i>
+    </button>
+</div>
+
+<div class="table-card-height table-responsive content-slice-table">
+    <table (scrolled)="onScroll()" [fromRoot]="true" [infiniteScrollContainer]="selector" [infiniteScrollDistance]="2"
+        [infiniteScrollThrottle]="50" class="table table-bordered table-striped table-fixed" infiniteScroll>
+        <thead>
+            <tr>
+                <th *ngFor="let header of headers">{{ columnHeaders[header] }}
+                    <div ngbDropdown class="d-inline-block">
+                        <div id="dropdownBasic1" ngbDropdownToggle>
+                        </div>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button ngbDropdownItem>Classificar A -> Z</button>
+                            <button ngbDropdownItem>Classificar Z -> A</button>
+                            <div>
+                                <input class="form-control" placeholder="Procurar" formControlName="name" type="text" />
+                            </div>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data" 
+            [class.selected]="isSelected(item)"
+            [class.opacity-reduced]="selectedItems.length > 0 && !isSelected(item)"
+            (click)="toggleSelection(item)"
+            >
+                <td *ngFor="let key of headers">{{ item[key] }}</td>
+            </tr>
+            <tr *ngIf="data.length === 0">
+                <td colspan="4">
+                    <p class="m-0 p-1 alert alert-warning">
+                        Nenhum item foi encontrado
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,1 @@
+The TableCardComponent component could be separated into smaller and more customizable components to reduce coupling and improve maintainability.

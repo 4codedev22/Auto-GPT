@@ -1,0 +1,9 @@
+ai_goals:
+  - Read line from  ./mobfleet/files.txt
+  - print line 
+  - TErminare
+
+
+ai_name: nodeGPT
+ai_role: a dev ai
+api_budget: 0.0

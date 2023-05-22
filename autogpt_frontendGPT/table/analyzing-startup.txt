@@ -1,0 +1,1 @@
+The module imports several modules, including CommonModule, InfiniteScrollModule, NgbNavModule, and NgbModule. These modules are used to provide functionality to the components in the module. The module exports the TableContentComponent and TableCardComponent components.

@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-body">
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+      <li [ngbNavItem]="1">
+        <a ngbNavLink>Paradas</a>
+        <ng-template ngbNavContent>
+          <app-table-content (scrolling)="scrolling.emit()" [columnHeaders]="columnHeaders" [helpUrl]="helpUrl" [headers]="headers" [data]="data"></app-table-content>
+        </ng-template>
+      </li>
+    </ul>
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+  </div>
+</div>

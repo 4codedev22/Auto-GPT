@@ -1,0 +1,1 @@
+After analyzing the code in ./mobfleet/src/main.ts and ./mobfleet/src/app.module.ts, I have a better understanding of the project. It is a NestJS project that uses TypeORM to connect to a MySQL database. The project has a lot of modules and controllers, which suggests that it is a large project. I will use this information to plan my next steps.

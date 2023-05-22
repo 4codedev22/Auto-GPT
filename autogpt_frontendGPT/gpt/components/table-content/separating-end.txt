@@ -1,0 +1,4 @@
+Code review of the TableContentComponent:
+- The code is consistent with the rest of the project
+- The code is easy to read and understand
+- The code follows the coding standards and best practices of the project

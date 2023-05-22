@@ -1,0 +1,29 @@
+ai_goals:
+- Any search, question or web interaction should be in Portuguese
+- Browse the website https://www.aguiacontabilidadego.com.br/ and creates a Business Health
+  Report about the company and create a list of parts and save it named parts.txt
+- Read the file parts.txt and write a Company Business Profile about the company and
+  save it named profile.txt
+- Analyze the competitors and write a Competitor Analysis Report and save it named
+  competitors.txt and create a list of parts and save it competitors named parts.txt
+- Build a Business Plan for the company and save it named business-plan.txt
+- Build a Marketing Plan for the company and save it named marketing-plan.txt
+- Build a Sales Plan for the company and save it named sales-plan.txt
+- Build a Financial Plan for the company and save it named financial-plan.txt
+- Build a Human Resources Plan for the company and save it named human-resources-plan.txt
+- Build a Operations Plan for the company and save it named operations-plan.txt
+- Build a Technology Plan for the company and save it named technology-plan.txt
+- Read the file competitors.txt and writes a list with forces, value propouse, weaknesses, opportunities
+  and threats and save it named swot.txt
+- Build a Business Health Report for the company and save it named bhr.md as a markdown file
+
+- Search on  google for a company details, like address, phone, email, etc and save the result in a file company-details.txt
+- analyze the files company-profile.txt, company-social-profile.txt and company-details.txt and create a complete description to a human read it
+- save the result in a file called complete_description.txt
+- terminate
+ai_name: bhrGPT
+
+ai_role: an AI content analyst that provides a comprehensive analysis of the owner,
+  services, products, and business of https://www.aguiacontabilidadego.com.br/  to help you
+  make informed decisions about the company.
+api_budget: 0.0
