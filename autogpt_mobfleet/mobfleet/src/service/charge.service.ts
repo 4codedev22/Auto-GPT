@@ -2,8 +2,8 @@ import { Injectable, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
 
-import { ChargeDTO } from '../service/dto/charge.dto';
-import { ChargeMapper } from '../service/mapper/charge.mapper';
+import { ChargeDTO } from './dto/charge.dto';
+import { ChargeMapper } from './mapper/charge.mapper';
 import { ChargeRepository } from '../repository/charge.repository';
 
 const relationshipNames = [];

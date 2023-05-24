@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger, NotFoundException, BadRequestException, Inject, forwardRef } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions, OrderByCondition, SelectQueryBuilder } from 'typeorm';
-import { VehicleDTO } from '../service/dto/vehicle.dto';
-import { VehicleMapper } from '../service/mapper/vehicle.mapper';
+import { VehicleDTO } from './dto/vehicle.dto';
+import { VehicleMapper } from './mapper/vehicle.mapper';
 import { VehicleRepository } from '../repository/vehicle.repository';
 import { VehicleStatus } from '../domain/enumeration/vehicle-status';
 import { LocationService } from './location.service';

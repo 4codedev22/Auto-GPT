@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { VehicleManufacturerDTO } from '../service/dto/vehicle-manufacturer.dto';
-import { VehicleManufacturerMapper } from '../service/mapper/vehicle-manufacturer.mapper';
+import { VehicleManufacturerDTO } from './dto/vehicle-manufacturer.dto';
+import { VehicleManufacturerMapper } from './mapper/vehicle-manufacturer.mapper';
 import { VehicleManufacturerRepository } from '../repository/vehicle-manufacturer.repository';
 
 const relationshipNames = [];

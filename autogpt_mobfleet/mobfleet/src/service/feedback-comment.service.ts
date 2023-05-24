@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { FeedbackCommentDTO } from '../service/dto/feedback-comment.dto';
-import { FeedbackCommentMapper } from '../service/mapper/feedback-comment.mapper';
+import { FeedbackCommentDTO } from './dto/feedback-comment.dto';
+import { FeedbackCommentMapper } from './mapper/feedback-comment.mapper';
 import { FeedbackCommentRepository } from '../repository/feedback-comment.repository';
 
 const relationshipNames = [];

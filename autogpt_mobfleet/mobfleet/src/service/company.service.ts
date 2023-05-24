@@ -2,11 +2,11 @@ import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions, OrderByCondition } from 'typeorm';
 
-import { CompanyDTO } from '../service/dto/company.dto';
+import { CompanyDTO } from './dto/company.dto';
 import { CompanyNoAuthDTO } from './dto/company-no-auth.dto';
 
-import { CompanyMapper } from '../service/mapper/company.mapper';
-import { CompanyNoAuthMapper } from '../service/mapper/company-no-auth.mapper';
+import { CompanyMapper } from './mapper/company.mapper';
+import { CompanyNoAuthMapper } from './mapper/company-no-auth.mapper';
 
 import { CompanyRepository } from '../repository/company.repository';
 

@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { MaintenanceDTO } from '../service/dto/maintenance.dto';
-import { MaintenanceMapper } from '../service/mapper/maintenance.mapper';
+import { MaintenanceDTO } from './dto/maintenance.dto';
+import { MaintenanceMapper } from './mapper/maintenance.mapper';
 import { MaintenanceRepository } from '../repository/maintenance.repository';
 
 const relationshipNames = [];

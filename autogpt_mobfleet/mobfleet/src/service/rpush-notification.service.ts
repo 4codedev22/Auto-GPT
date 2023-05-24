@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { RpushNotificationDTO } from '../service/dto/rpush-notification.dto';
-import { RpushNotificationMapper } from '../service/mapper/rpush-notification.mapper';
+import { RpushNotificationDTO } from './dto/rpush-notification.dto';
+import { RpushNotificationMapper } from './mapper/rpush-notification.mapper';
 import { RpushNotificationRepository } from '../repository/rpush-notification.repository';
 
 const relationshipNames = [];

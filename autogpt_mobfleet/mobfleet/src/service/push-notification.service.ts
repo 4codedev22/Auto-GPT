@@ -6,8 +6,8 @@ import { PushNotificationPermission } from '../domain/enumeration/push-notificat
 import { RpushAppDTO } from './dto/rpush-app.dto';
 import { RpushNotificationDTO } from './dto/rpush-notification.dto';
 
-import { RpushAppService } from '../service/rpush-app.service';
-import { RpushNotificationService } from '../service/rpush-notification.service';
+import { RpushAppService } from './rpush-app.service';
+import { RpushNotificationService } from './rpush-notification.service';
 
 function filterUnique(value: string | null, index: number, self: string[]) {
   return value != null && self.indexOf(value) === index;

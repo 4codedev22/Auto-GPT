@@ -5,14 +5,14 @@ import { startOfDay, endOfDay, parseJSON, differenceInSeconds, isBefore } from '
 
 import { SecondsToUnit } from '../domain/enumeration/charge-unit';
 
-import { ChargeTableMapper } from '../service/mapper/charge-table.mapper';
+import { ChargeTableMapper } from './mapper/charge-table.mapper';
 
 import { ChargeTableRepository } from '../repository/charge-table.repository';
 
 import { Sort } from '../domain/base/pagination.entity';
 import { ChargeTable } from '../domain/charge-table.entity';
 
-import { ChargeTableDTO } from '../service/dto/charge-table.dto';
+import { ChargeTableDTO } from './dto/charge-table.dto';
 import { ChargeTableFilterDTO } from './dto/charge-table-filter.dto';
 import { ChargeConditionDTO } from './dto/charge-condition.dto';
 import { exit } from 'process';

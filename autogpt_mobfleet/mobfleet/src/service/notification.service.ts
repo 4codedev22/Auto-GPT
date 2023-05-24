@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { NotificationDTO } from '../service/dto/notification.dto';
-import { NotificationMapper } from '../service/mapper/notification.mapper';
+import { NotificationDTO } from './dto/notification.dto';
+import { NotificationMapper } from './mapper/notification.mapper';
 import { NotificationRepository } from '../repository/notification.repository';
 
 const relationshipNames = [];

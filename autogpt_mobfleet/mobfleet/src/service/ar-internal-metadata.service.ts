@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { ArInternalMetadataDTO } from '../service/dto/ar-internal-metadata.dto';
-import { ArInternalMetadataMapper } from '../service/mapper/ar-internal-metadata.mapper';
+import { ArInternalMetadataDTO } from './dto/ar-internal-metadata.dto';
+import { ArInternalMetadataMapper } from './mapper/ar-internal-metadata.mapper';
 import { ArInternalMetadataRepository } from '../repository/ar-internal-metadata.repository';
 
 const relationshipNames = [];

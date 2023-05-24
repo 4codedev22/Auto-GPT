@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { UsedDiscountCouponAccountDTO } from '../service/dto/used-discount-coupon-account.dto';
-import { UsedDiscountCouponAccountMapper } from '../service/mapper/used-discount-coupon-account.mapper';
+import { UsedDiscountCouponAccountDTO } from './dto/used-discount-coupon-account.dto';
+import { UsedDiscountCouponAccountMapper } from './mapper/used-discount-coupon-account.mapper';
 import { UsedDiscountCouponAccountRepository } from '../repository/used-discount-coupon-account.repository';
 
 const relationshipNames = ['account', 'reservation', 'discountCoupon'];

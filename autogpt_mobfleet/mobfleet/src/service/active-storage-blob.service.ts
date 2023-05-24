@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { ActiveStorageBlobDTO } from '../service/dto/active-storage-blob.dto';
-import { ActiveStorageBlobMapper } from '../service/mapper/active-storage-blob.mapper';
+import { ActiveStorageBlobDTO } from './dto/active-storage-blob.dto';
+import { ActiveStorageBlobMapper } from './mapper/active-storage-blob.mapper';
 import { ActiveStorageBlobRepository } from '../repository/active-storage-blob.repository';
 
 const relationshipNames = [];

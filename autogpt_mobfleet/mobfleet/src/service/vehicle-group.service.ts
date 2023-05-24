@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger, Inject, forwardRef } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions, OrderByCondition } from 'typeorm';
-import { VehicleGroupDTO } from '../service/dto/vehicle-group.dto';
-import { VehicleGroupMapper } from '../service/mapper/vehicle-group.mapper';
+import { VehicleGroupDTO } from './dto/vehicle-group.dto';
+import { VehicleGroupMapper } from './mapper/vehicle-group.mapper';
 import { VehicleGroupRepository } from '../repository/vehicle-group.repository';
 import { ContractService } from './contract.service';
 import { VehicleGroupCreateDTO } from './dto/vehicle-group-create.dto';

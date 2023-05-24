@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { CommandLogDTO } from '../service/dto/command-log.dto';
-import { CommandLogMapper } from '../service/mapper/command-log.mapper';
+import { CommandLogDTO } from './dto/command-log.dto';
+import { CommandLogMapper } from './mapper/command-log.mapper';
 import { CommandLogRepository } from '../repository/command-log.repository';
 import { VehicleDTO } from './dto/vehicle.dto';
 

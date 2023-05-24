@@ -7,7 +7,7 @@ import { AlertMapper } from './mapper';
 
 import { AlertRepository } from '../repository';
 
-import { ReportService } from './';
+import { ReportService } from '.';
 
 const relationshipNames = [];
 

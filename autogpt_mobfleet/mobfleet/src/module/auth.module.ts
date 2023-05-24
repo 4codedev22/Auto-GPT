@@ -1,10 +1,10 @@
 import { forwardRef, Module } from '@nestjs/common';
 import { AuthService } from '../service/auth.service';
-import { AccountModule } from '../module/account.module';
-import { CompanyModule } from '../module/company.module';
-import { ContractModule } from '../module/contract.module';
-import { ReservationModule } from '../module/reservation.module';
-import { SmsModule } from '../module/sms.module';
+import { AccountModule } from './account.module';
+import { CompanyModule } from './company.module';
+import { ContractModule } from './contract.module';
+import { ReservationModule } from './reservation.module';
+import { SmsModule } from './sms.module';
 import { PassportModule } from '@nestjs/passport';
 import { JwtModule } from '@nestjs/jwt';
 import { JwtStrategy } from '../security/passport.jwt.strategy';

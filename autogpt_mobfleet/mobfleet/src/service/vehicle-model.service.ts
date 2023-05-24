@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions, OrderByCondition } from 'typeorm';
-import { VehicleModelDTO } from '../service/dto/vehicle-model.dto';
-import { VehicleModelMapper } from '../service/mapper/vehicle-model.mapper';
+import { VehicleModelDTO } from './dto/vehicle-model.dto';
+import { VehicleModelMapper } from './mapper/vehicle-model.mapper';
 import { VehicleModelRepository } from '../repository/vehicle-model.repository';
 import { AccountDTO } from './dto/account.dto';
 import { VehicleManufacturerService } from './vehicle-manufacturer.service';

@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 
-import { CardDTO } from '../service/dto/card.dto';
+import { CardDTO } from './dto/card.dto';
 import { AccountService } from './account.service';
 import { CompanyService } from './company.service';
 import { PagarmeService } from './pagarme.service';

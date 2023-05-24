@@ -3,7 +3,7 @@ import { Client as ZenviaClient, IMessage, TextContent } from '@zenvia/sdk';
 import { generator } from 'rand-token';
 import { Company } from '../domain/company.entity';
 import { TokenMode } from '../domain/enumeration/token-mode';
-import {SmsTokenService} from '../service/sms-token.service'
+import {SmsTokenService} from './sms-token.service'
 
 @Injectable()
 export class SmsService {

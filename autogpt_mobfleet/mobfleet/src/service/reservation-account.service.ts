@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { ReservationAccountDTO } from '../service/dto/reservation-account.dto';
-import { ReservationAccountMapper } from '../service/mapper/reservation-account.mapper';
+import { ReservationAccountDTO } from './dto/reservation-account.dto';
+import { ReservationAccountMapper } from './mapper/reservation-account.mapper';
 import { ReservationAccountRepository } from '../repository/reservation-account.repository';
 
 const relationshipNames = [];

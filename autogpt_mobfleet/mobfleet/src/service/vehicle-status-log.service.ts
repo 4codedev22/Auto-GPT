@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { VehicleStatusLogDTO } from '../service/dto/vehicle-status-log.dto';
-import { VehicleStatusLogMapper } from '../service/mapper/vehicle-status-log.mapper';
+import { VehicleStatusLogDTO } from './dto/vehicle-status-log.dto';
+import { VehicleStatusLogMapper } from './mapper/vehicle-status-log.mapper';
 import { VehicleStatusLogRepository } from '../repository/vehicle-status-log.repository';
 import { VehicleStatusLogCreateDTO } from './dto/vehicle-status-log-create.dto';
 

@@ -1,5 +1,5 @@
 import { ChargeDTO } from "../../../service/dto/charge.dto";
-import { PaymentMethodType } from "../../../domain/enumeration/payment-method-type";
+import { PaymentMethodType } from "../../enumeration/payment-method-type";
 
 export interface IReservationPayment {
   createManualCharge: (charge: IReservationPayment.CreateManualChargeParams) => Promise<IReservationPayment.CreateManualChargeResult>;

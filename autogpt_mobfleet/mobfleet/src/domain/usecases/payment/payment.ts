@@ -1,5 +1,5 @@
-import { ChargeStatus } from '../../../domain/enumeration/charge-status';
-import { OrderStatus } from '../../../domain/enumeration/order-status';
+import { ChargeStatus } from '../../enumeration/charge-status';
+import { OrderStatus } from '../../enumeration/order-status';
 
 export interface IPayment {
 	createOrder: (order: IPayment.CreateOrderParams) => Promise<IPayment.CreateOrderResult>;

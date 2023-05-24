@@ -5,7 +5,7 @@ import { generator } from 'rand-token';
 import axios from 'axios';
 import { add as addToDate, sub as subFromDate, format as formatDate, differenceInSeconds, differenceInMinutes, differenceInHours } from 'date-fns';
 import { RatingMapper } from './mapper/rating.mapper';
-import { ReservationMapper } from '../service/mapper/reservation.mapper';
+import { ReservationMapper } from './mapper/reservation.mapper';
 
 import { TypeFuel } from '../domain/enumeration/type-fuel';
 import { ChargeType } from '../domain/enumeration/charge-type';
@@ -41,7 +41,7 @@ import { ChargeDTO } from './dto/charge.dto';
 import { RatingDTO } from './dto/rating.dto';
 import { VehicleDTO } from './dto/vehicle.dto';
 import { ContractDTO } from './dto/contract.dto';
-import { ReservationDTO } from '../service/dto/reservation.dto';
+import { ReservationDTO } from './dto/reservation.dto';
 import { ChargeTableDTO } from './dto/charge-table.dto';
 import { DiscountCouponDTO } from './dto/discount-coupon.dto';
 import { ReservationCreateDTO } from './dto/reservation-create.dto';

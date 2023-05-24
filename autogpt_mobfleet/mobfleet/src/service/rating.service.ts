@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { RatingDTO } from '../service/dto/rating.dto';
-import { RatingMapper } from '../service/mapper/rating.mapper';
+import { RatingDTO } from './dto/rating.dto';
+import { RatingMapper } from './mapper/rating.mapper';
 import { RatingRepository } from '../repository/rating.repository';
 
 const relationshipNames = [];

@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { RoleDTO } from '../service/dto/role.dto';
-import { RoleMapper } from '../service/mapper/role.mapper';
+import { RoleDTO } from './dto/role.dto';
+import { RoleMapper } from './mapper/role.mapper';
 import { RoleRepository } from '../repository/role.repository';
 import { Role } from '../domain/role.entity';
 import { ContractDTO } from './dto/contract.dto';

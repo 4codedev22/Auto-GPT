@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { ChargeConditionDTO }  from '../service/dto/charge-condition.dto';
-import { ChargeConditionMapper }  from '../service/mapper/charge-condition.mapper';
+import { ChargeConditionDTO }  from './dto/charge-condition.dto';
+import { ChargeConditionMapper }  from './mapper/charge-condition.mapper';
 import { ChargeConditionRepository } from '../repository/charge-condition.repository';
 
 const relationshipNames = [];

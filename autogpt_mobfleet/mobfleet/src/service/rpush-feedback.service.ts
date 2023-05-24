@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { RpushFeedbackDTO } from '../service/dto/rpush-feedback.dto';
-import { RpushFeedbackMapper } from '../service/mapper/rpush-feedback.mapper';
+import { RpushFeedbackDTO } from './dto/rpush-feedback.dto';
+import { RpushFeedbackMapper } from './mapper/rpush-feedback.mapper';
 import { RpushFeedbackRepository } from '../repository/rpush-feedback.repository';
 
 const relationshipNames = [];

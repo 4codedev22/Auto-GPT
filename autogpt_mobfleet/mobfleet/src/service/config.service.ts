@@ -3,10 +3,10 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
 import { Cache } from 'cache-manager';
 
-import { ConfigDTO } from '../service/dto/config.dto';
+import { ConfigDTO } from './dto/config.dto';
 import { ConfigCreateOrUpdateDTO } from './dto/config-create-or-update.dto';
 
-import { ConfigMapper } from '../service/mapper/config.mapper';
+import { ConfigMapper } from './mapper/config.mapper';
 import { ConfigRepository } from '../repository/config.repository';
 import { ContractService } from './contract.service';
 import { Config } from '../domain/config.entity';

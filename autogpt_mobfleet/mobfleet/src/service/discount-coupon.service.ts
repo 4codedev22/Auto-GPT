@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger, Inject, BadRequestException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { DiscountCouponDTO }  from '../service/dto/discount-coupon.dto';
-import { DiscountCouponMapper }  from '../service/mapper/discount-coupon.mapper';
+import { DiscountCouponDTO }  from './dto/discount-coupon.dto';
+import { DiscountCouponMapper }  from './mapper/discount-coupon.mapper';
 import { DiscountCouponRepository } from '../repository/discount-coupon.repository';
 import { DiscountCouponFilterDTO } from './dto/discount-coupon-filter.dto';
 import { UsedDiscountCouponAccountService } from './used-discount-coupon-account.service';

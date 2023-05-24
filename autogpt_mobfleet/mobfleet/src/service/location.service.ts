@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger, Inject, forwardRef } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions, OrderByCondition, SelectQueryBuilder } from 'typeorm';
-import { LocationDTO } from '../service/dto/location.dto';
-import { LocationMapper } from '../service/mapper/location.mapper';
+import { LocationDTO } from './dto/location.dto';
+import { LocationMapper } from './mapper/location.mapper';
 import { LocationRepository } from '../repository/location.repository';
 import { LocationType } from '../domain/enumeration/location-type';
 import { ContractService } from './contract.service';

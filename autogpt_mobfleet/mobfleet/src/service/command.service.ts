@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger, forwardRef, Inject, BadRequestException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { CommandDTO } from '../service/dto/command.dto';
-import { CommandMapper } from '../service/mapper/command.mapper';
+import { CommandDTO } from './dto/command.dto';
+import { CommandMapper } from './mapper/command.mapper';
 import { CommandRepository } from '../repository/command.repository';
 import { DeviceCommandService, GetJobResponse } from './device-command.service';
 import { AvailableCommands } from '../domain/enumeration/available-commands';

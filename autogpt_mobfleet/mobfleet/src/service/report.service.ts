@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindOneOptions, OrderByCondition } from 'typeorm';
-import { ReportDTO } from '../service/dto/report.dto';
-import { ReportMapper } from '../service/mapper/report.mapper';
+import { ReportDTO } from './dto/report.dto';
+import { ReportMapper } from './mapper/report.mapper';
 import { ReportRepository } from '../repository/report.repository';
 import { AccountDTO } from './dto/account.dto';
 import ExcelJS, { Worksheet } from 'exceljs';

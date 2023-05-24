@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { SmsTokenDTO } from '../service/dto/sms-token.dto';
-import { SmsTokenMapper } from '../service/mapper/sms-token.mapper';
+import { SmsTokenDTO } from './dto/sms-token.dto';
+import { SmsTokenMapper } from './mapper/sms-token.mapper';
 import { SmsTokenRepository } from '../repository/sms-token.repository';
 
 const relationshipNames = [];

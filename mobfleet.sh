@@ -1,3 +1,2 @@
-#!/bin/bash
-
-./run.sh -C mobfleet.yaml -w autogpt_mobfleet --allow-downloads
+#!/bin/sh
+./run.sh -C mobfleet.yaml -w autogpt_mobfleet --skip-news

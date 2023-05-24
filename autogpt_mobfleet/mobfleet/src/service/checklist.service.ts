@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger, Inject, forwardRef } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions, OrderByCondition } from 'typeorm';
-import { ChecklistDTO } from '../service/dto/checklist.dto';
-import { ChecklistMapper } from '../service/mapper/checklist.mapper';
+import { ChecklistDTO } from './dto/checklist.dto';
+import { ChecklistMapper } from './mapper/checklist.mapper';
 import { ChecklistRepository } from '../repository/checklist.repository';
 import { CheckListReportFilterDTO } from './dto/checklist-report.filter.dto';
 import { AccountDTO } from './dto/account.dto';

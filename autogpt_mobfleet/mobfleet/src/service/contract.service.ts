@@ -1,8 +1,8 @@
 import { Injectable, Logger, Inject, forwardRef, BadRequestException, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions, OrderByCondition, SelectQueryBuilder } from 'typeorm';
-import { ContractDTO } from '../service/dto/contract.dto';
-import { ContractMapper } from '../service/mapper/contract.mapper';
+import { ContractDTO } from './dto/contract.dto';
+import { ContractMapper } from './mapper/contract.mapper';
 import { ContractRepository } from '../repository/contract.repository';
 import { ContractCreateDTO } from './dto/contract-create.dto';
 import { CompanyService } from './company.service';

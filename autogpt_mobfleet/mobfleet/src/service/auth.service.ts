@@ -1,6 +1,6 @@
 import { Injectable, HttpException, HttpStatus, Logger, forwardRef, Inject } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { UserLoginDTO } from '../service/dto/user-login.dto';
+import { UserLoginDTO } from './dto/user-login.dto';
 import { Payload } from '../security/payload.interface';
 import * as bcrypt from 'bcryptjs';
 import { AccountService } from './account.service';

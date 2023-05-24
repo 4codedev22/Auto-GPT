@@ -1,12 +1,15 @@
 import argparse
 import logging
 
+from anyio import Path
+
 from autogpt.commands.file_operations import ingest_file, list_files
 from autogpt.config import Config
 from autogpt.memory import get_memory
 
 cfg = Config()
-
+# configure path as this file location
+cfg.workspace_path  = Path(__file__).parent
 
 def configure_logging():
     logging.basicConfig(

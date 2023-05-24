@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger, NotFoundException, Inject, forwardRef } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions, OrderByCondition } from 'typeorm';
-import { DamageDTO } from '../service/dto/damage.dto';
-import { DamageMapper } from '../service/mapper/damage.mapper';
+import { DamageDTO } from './dto/damage.dto';
+import { DamageMapper } from './mapper/damage.mapper';
 import { DamageRepository } from '../repository/damage.repository';
 import { DamageCreateDTO } from './dto/damage-create.dto';
 import { AccountDTO } from './dto/account.dto';

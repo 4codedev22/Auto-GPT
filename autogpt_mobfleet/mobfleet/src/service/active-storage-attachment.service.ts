@@ -1,8 +1,8 @@
 import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindManyOptions, FindOneOptions } from 'typeorm';
-import { ActiveStorageAttachmentDTO } from '../service/dto/active-storage-attachment.dto';
-import { ActiveStorageAttachmentMapper } from '../service/mapper/active-storage-attachment.mapper';
+import { ActiveStorageAttachmentDTO } from './dto/active-storage-attachment.dto';
+import { ActiveStorageAttachmentMapper } from './mapper/active-storage-attachment.mapper';
 import { ActiveStorageAttachmentRepository } from '../repository/active-storage-attachment.repository';
 
 const relationshipNames = [];

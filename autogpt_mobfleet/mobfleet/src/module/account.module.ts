@@ -3,7 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AccountController } from '../web/rest/account.controller';
 import { AccountRepository } from '../repository/account.repository';
 import { AccountService } from '../service/account.service';
-import { MailerModule } from '../module/mailer.module';
+import { MailerModule } from './mailer.module';
 import { ManagementController } from '../web/rest/management.controller';
 import { SharedModule } from './shared/shared.module';
 import { RoleModule } from './role.module';
