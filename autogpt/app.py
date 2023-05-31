@@ -5,13 +5,17 @@ from typing import Dict, List, NoReturn, Union
 from autogpt.agent.agent_manager import AgentManager
 from autogpt.commands.command import CommandRegistry, command
 from autogpt.commands.web_requests import scrape_links, scrape_text
+from autogpt.commands.analyze_code import analyze_typescript_code, split_typescript_code
+from autogpt.commands.improve_code import improve_typescript_code
 from autogpt.config import Config
 from autogpt.logs import logger
 from autogpt.memory import get_memory
-from autogpt.processing.text import summarize_text
+from autogpt.processing.text import analyze_typescript_file, split_text, summarize_text
 from autogpt.prompts.generator import PromptGenerator
 from autogpt.speech import say_text
 from autogpt.url_utils.validators import validate_url
+from autogpt.commands.file_operations_utils import read_textual_file
+from autogpt.commands.file_operations import split_file
 
 CFG = Config()
 AGENT_MANAGER = AgentManager()
@@ -153,6 +157,68 @@ def get_text_summary(url: str, question: str) -> str:
     text = scrape_text(url)
     summary = summarize_text(url, text, question)
     return f""" "Result" : {summary}"""
+
+
+@command(
+    "typescript_agent",
+    "Start GPT Typescript Agent",
+    '"filename": "<filename>"'
+)
+def typescript_agent(filename: str) -> str:
+    """Start an agent with a given name, task, and prompt
+
+    Args:
+        name (str): The name of the agent
+        task (str): The task of the agent
+        prompt (str): The prompt for the agent
+        model (str): The model to use for the agent
+
+    Returns:
+        str: The response of the agent
+    """
+    text = read_textual_file(filename, logger)
+    chunks =  list(split_file(text, max_length=8000))
+    for i, chunk in enumerate(chunks):
+        logger.info(f"Chunk {i + 1} / {len(chunks)} length: {len(chunk)} characters")
+        agent_response = split_typescript_code(chunk)
+        logger.info(f"Agent response: {agent_response}")
+        f = filename.replace('.ts', f'_{i}.json')
+        with open(f, 'w') as outfile:
+            json.dump(agent_response, outfile)
+        return f
+
+    return f"Response: {agent_response}"
+
+
+@command(
+    "get_typescript_structure_from_filename", "Get typescript structure code from filename", '"filename": "<filename>"'
+)
+def get_typescript_structure_from_filename(filename: str) -> str:
+    """Return the typescript structure code from filename
+
+    Args:
+        filename (str): The filename to be used
+
+    Returns:
+        str: The typescript structure code
+    """
+    response = analyze_typescript_file(filename)
+
+    suggestions = analyze_typescript_code(response["final_combination"])
+    improved_code = improve_typescript_code(suggestions, response["final_combination"])
+
+    filename = filename.replace('.ts', '_improved.ts')
+    with open(filename, 'w') as outfile:
+       outfile.write(improved_code)
+
+    filename = filename.replace('_improved.ts', '.json')
+    with open(filename, 'w') as outfileJson:
+       json.dump({
+           "response": response,
+            "suggestions": suggestions,
+       }, outfileJson)
+
+    return f""" "Result" : {filename}"""
 
 
 @command("get_hyperlinks", "Get hyperlinks", '"url": "<url>"')

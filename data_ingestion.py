@@ -9,7 +9,7 @@ from autogpt.memory import get_memory
 
 cfg = Config()
 # configure path as this file location
-cfg.workspace_path  = Path(__file__).parent
+# cfg.workspace_path  = Path(__file__).parent
 
 def configure_logging():
     logging.basicConfig(

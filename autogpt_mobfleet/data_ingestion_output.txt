@@ -1,0 +1,18 @@
+ [0m Working with file ./filelist.txt
+ [0m Reading file ./filelist.txt with parser <autogpt.commands.file_operations_utils.TXTParser object at 0x7fcff73d7310>
+ [0m File length: 27258 characters
+ [0m Ingesting chunk 1 / 7 into memory
+ [0m Total running cost: $0.000
+ [0m Ingesting chunk 2 / 7 into memory
+ [0m Total running cost: $0.001
+ [0m Ingesting chunk 3 / 7 into memory
+ [0m Total running cost: $0.001
+ [0m Ingesting chunk 4 / 7 into memory
+ [0m Total running cost: $0.002
+ [0m Ingesting chunk 5 / 7 into memory
+ [0m Total running cost: $0.002
+ [0m Ingesting chunk 6 / 7 into memory
+ [0m Total running cost: $0.002
+ [0m Ingesting chunk 7 / 7 into memory
+ [0m Total running cost: $0.003
+ [0m Done ingesting 7 chunks from ./filelist.txt.

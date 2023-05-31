@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from typing import Dict
 
 from autogpt.commands.command import command
 from autogpt.llm import call_ai_function
@@ -33,3 +34,65 @@ def improve_code(suggestions: list[str], code: str) -> str:
     )
 
     return call_ai_function(function_string, args, description_string)
+
+
+
+@command(
+    "improve_typescript_code",
+    "Get Improved Typescript Code",
+    '"suggestions": "<list_of_suggestions>", "code": "<full_code_string>"',
+)
+def improve_typescript_code(suggestions: list[str], code: str) -> str:
+    """
+    A function that takes in code and suggestions and returns a response from create
+      chat completion api call.
+
+    Parameters:
+        suggestions (list): A list of suggestions around what needs to be improved.
+        code (str): Typescript code to be improved.
+    Returns:
+        A result string from create chat completion. Improved typescript code in response.
+    """
+
+    function_string = (
+        "def generate_typescript_improved_code(suggestions: list[str], code: str) -> str:"
+    )
+    args = [json.dumps(suggestions), code]
+    description_string = (
+        "Improves the provided typescript code based on the suggestions"
+        " provided, making no other changes."
+    )
+
+    return call_ai_function(function_string, args, description_string)
+
+
+@command(
+    "improve_split_typescript_code",
+    "Get Splitted Improved Typescript Code",
+    '"suggestions": "<list_of_suggestions>", "code": "<full_code_string>"',
+)
+def improve_split_typescript_code(suggestions: list[str], code: str) -> str:
+    """
+    A function that takes in code and suggestions and returns a response from create
+      chat completion api call.
+
+    Parameters:
+        suggestions (list): A list of suggestions around what needs to be splitted and improved.
+        code (str): Typescript code to be splitted and improved.
+    Returns:
+        A result string from create chat completion. Improved typescript code in response.
+    """
+
+    function_string = (
+        "def improve_typescript_class_code(suggestions: list[str], code: str) -> str:"
+    )
+    args = [json.dumps(suggestions), code]
+    description_string = (
+        "Improves the provided Typescript class code based on the suggestions "
+        "provided, making no other changes."
+    )
+
+    return call_ai_function(function_string, args, description_string)
+
+
+
